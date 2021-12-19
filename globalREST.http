@@ -1,0 +1,56 @@
+### GET POST ###
+GET http://localhost:4000/api/v1/post
+
+
+### GET POST BY ID ###
+GET http://localhost:4000/api/v1/post/1
+
+### CREATE POST ###
+POST http://localhost:4000/api/v1/post
+content-Type: application/json
+
+{
+    "title": "Anime is beautiful",
+    "content": "this is my first Anime content @mkhembrom",
+    "userId": 1
+}
+
+### UPDATE POST ###
+PUT http://localhost:4000/api/v1/post/3
+content-Type: application/json
+
+{
+    "title": "my update what first Post",
+    "content": "this is my 1st hahaha updated content @mkhembrom",
+    "userId": 1
+}
+
+### DELETE POST ###
+DELETE http://localhost:4000/api/v1/post/2
+
+###############################################################################
+
+### REGISTER OR CREATE USER ###
+POST http://localhost:4000/api/v1/auth/register
+content-Type: application/json
+
+{
+    "email": "sandivya@gmail.com",
+    "name": "sandivya",
+    "password": "123456"
+}
+
+
+### LOGIN A USER ###
+POST http://localhost:4000/api/v1/auth/login
+content-Type: application/json
+
+{
+    "email": "manjesh@gmail.com",
+    "password": "123456"
+}
+
+### USER ###
+GET http://localhost:4000/api/v1/auth/user
+
+### FOLLOWER ###
